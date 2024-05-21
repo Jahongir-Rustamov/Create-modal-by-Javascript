@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Varela&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Varela', sans-serif;
+  height: 100vh;
+  background: url('https://cdn.kodixauto.ru/media/image/6100204caf109ce030c18fe6');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    
+}  
+.hidden{
+    display: none;
+} 
+.wrapper .btn1  {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-radius: 5px;
+    border: none;
+    background:burlywood;
+}
+.modal{
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius:8px;
+    padding: 15px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+.close_btn{
+   color: #2222;
+   border: none;
+   outline: none;
+   
+}
+.close_btn i{
+    color:black;
+    font-size: 30px;
+}
+.modal_header{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.overly{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
